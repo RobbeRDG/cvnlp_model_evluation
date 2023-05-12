@@ -19,10 +19,11 @@ SPEECH_MODEL_RESULTS_FOLDER_PATH = join(MODEL_EVALUATION_RESULTS_FOLDER_PATH, 's
 TEXT_MODEL_RESULTS_FOLDER_PATH = join(MODEL_EVALUATION_RESULTS_FOLDER_PATH, 'text_model')
 
 # Set the ground truth labels
+RAW_GROUND_TRUTH_LABELS = pd.read_csv(join(GROUND_TRUTH_FOLDER_PATH, 'raw', 'test_sent_clean.csv'))
 GROUND_TRUTH_LABELS = pd.read_csv(join(GROUND_TRUTH_FOLDER_PATH, 'ground_truth.csv'))
 
 # Set the model evaluation results
-SPEECH_MODEL_RESULTS = pd.read_csv(join(SPEECH_MODEL_RESULTS_FOLDER_PATH, 'baseline_weighted__11_05_2023_12_19_56_val_results_7.csv'))
+SPEECH_MODEL_RESULTS = pd.read_csv(join(SPEECH_MODEL_RESULTS_FOLDER_PATH, 'baseline_weighted__12_05_2023_00_14_44_val_results_26.csv'))
 TEXT_MODEL_RESULTS = pd.read_csv(join(TEXT_MODEL_RESULTS_FOLDER_PATH, 'baseline_weighted__11_05_2023_12_19_56_val_results_7.csv'))
 
 # Emotion label to one-hot index mapping
